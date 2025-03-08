@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@font-face {
+  font-family: 'Gullia';
+  src: url('/fonts/Gullia.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/fonts/NunitoSans.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-gullia {
+  font-family: 'Gullia', serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
 }
